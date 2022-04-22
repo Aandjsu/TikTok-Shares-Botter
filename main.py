@@ -11,7 +11,7 @@ class TikTok:
         self.lock = threading.Lock()
 
         try:
-            self.amount = int(input('> Desired Amount of Shares: '))
+            self.amount = int(input('> 1000000: '))
         except ValueError:
             print('\nInteger expected.')
             os.system('title [TikTok Shares Botter] - Restart required')
@@ -19,7 +19,7 @@ class TikTok:
             os._exit(0)
 
         try:
-            self.video_id = input('> TikTok URL: ').split('/')[5]
+            self.video_id = input('> https://www.tiktok.com/@hushdhisje74929/video/7088915928418618667').split('/')[5]
         except IndexError:
             print(
                 '\nInvalid TikTok URL format.\nFormat expected: https://www.tiktok.com/@username/vi'
